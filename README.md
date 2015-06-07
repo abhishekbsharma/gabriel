@@ -86,11 +86,11 @@ works other Linux distributions as long as you can install required package.
 How to use
 --------------
 
-1. Run the `control server` from the binary directory.
+1. Run the `control server` from the binary directory in "EMULATED MODE" (without Google Glass)
 
     ```
     $ cd <gabriel-repo>/bin
-    $ ./gabriel-control
+    $ ./gabriel-control -e /directorywithsomesamplejpgimages
     INFO     Start RESTful API Server
     INFO     Start UPnP Server
     INFO     Start monitoring offload engines
@@ -119,6 +119,7 @@ How to use
     INFO      - Disable nagle (No TCP delay)  : 1
     INFO     --------------------------------------------------
     ```
+NOTE: If you running this with client you can just run ./gabriel-control
 
 2. Run `ucomm server` from the binary directory.
 
